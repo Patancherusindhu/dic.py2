@@ -1,0 +1,84 @@
+# delect a list of keys from a dictionary
+# # keys to remove
+# keys=["name", "salary"]
+sample_dict = {"name": "kelly", "age":25 "salary":8000, "city": "new york"}
+sample_dict.pop('name')
+sample_dict.pop('salary')
+print(sample_dict)
+ 
+
+ # 2. ccount the frequency of each character in a given string using a dictionary.
+ x="python developers"
+ d={}
+ for i in x:
+     if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+ print(d)
+
+ #3. swap keys and values in a dictionary.
+ h={'a':1,'b',:2,'c':3,'d':5}
+ d={}
+ for i,j in h.items().
+    d[j]=i
+print(d)
+ 
+
+ #4.write a program to sum all the values in a dictionary.
+ h={'a':1,'b':2,'c':3,'d':5,'e':6}
+ sum=0
+ for i in h:
+     sum+=h[i]
+print(sum)
+    
+
+#6. convert a nested dictionary for a students details (name,roll,marks)
+d={"student-1":{'name':"ajay",'roll':12,'marks':90},
+    "student-2":{'name':"ram",'roll':30,'marks':88},
+    "student-3":{'name':"krish",'roll':28,'marks':96}}
+print(d)
+  
+#6. convert a dictionary to a list of tuples.
+h={'a':1,'b':2,'c':3,'d':5,'e':6}
+for i in h.items():
+     print(i)
+
+#7. write a program to store names as keys and their languages as values
+k=['programming','languages','developers']
+d={}
+for i in k:
+   d[i]=lens(i)
+print(d)
+
+
+#8. create a dictionary for numbers 1 to 5,where the value is "even"if the number is even , and
+#"odd" if the number is odd
+#expected output:
+#{1:'odd',2:'even',3'odd',4:'even',5:'odd'}
+d={}
+for i in range(1,6):
+   if i%2=0:
+      d[i]"even"
+    else:
+       d[i]="odd"
+print(d)
+
+#9. create reverse word dictionary 
+given list of words:create a dictionary with words as keys and their reversed string as values
+#expected output:
+#{'cat':'tac':'dog':'god':'bat':'tab'}
+
+words=["cat","dog","bat"]
+d={}
+for i in words:
+      res=""
+      for j in i:
+          res=j+res
+        d[i]=res
+    print(d)
+
+
+
+
+
